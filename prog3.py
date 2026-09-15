@@ -6,6 +6,10 @@ reservedWords = ["cin>>", "for", "int", "cout<<"  ]
 operator      = ["+", "-", "*", "/", "++", "--"   ]
 special       = [">", "=", ";","(", ")", ">=", ","]
 
+tokentypes    = {'reserved' : reservedWords,
+                 'operator' : operator,
+                 'special'  : special       }
+
 def tokenize(tokentype : list) -> str:
     pass
 
@@ -26,6 +30,9 @@ def Identifier(word : str) -> str:
         if word not in reservedWords:
             return word
 
+def isToken(tokentype : dict, word : str) -> bool:
+    tokentype = tokentypes
+    if str[] =
 
 def main():
 
@@ -50,7 +57,13 @@ def main():
             if Identifier(word):
                 print(f'{word} \t identifier')
 
+            else: 
+                if not Identifier(word) or not ReservedWord(word):
+                    print(f'{word} \t invalid')
+
+
         repeat_input = str(input("CONTINUE (y/n)?")).casefold()
+
 
         if repeat_input == "y":
                 statement
